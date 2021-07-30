@@ -1,0 +1,8 @@
+# Ignore artifacts:
+node_modules
+out
+.next
+.eslintrc
+.github
+*.d.ts
+next.config.js

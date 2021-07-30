@@ -1,0 +1,29 @@
+name: Lint
+
+on:
+  # Trigger the workflow on pull request,
+  # but only for the main branch
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - name: Get files
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install packages
+        run: npm ci
+      - name: Lint code files
+        run: npm run lint
