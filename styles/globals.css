@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "YS Text", sans-serif;
+  background-color: #e4e4e4;
 }
 
 a {
@@ -11,6 +11,43 @@ a {
   text-decoration: none;
 }
 
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("//yastatic.net/islands/_/PyVcRbwHetz0gOVWLonWH7Od8zM.woff2")
+      format("woff2"),
+    url("//yastatic.net/islands/_/bIx8jOfCEfR-mECoDUEZywDBuHA.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("//yastatic.net/islands/_/7_GKBdKFbUPzKlghJRv55xgz0FQ.woff2")
+      format("woff2"),
+    url("//yastatic.net/islands/_/SmqPmIMEXrW4lOY8QrhTUVDbrro.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("//yastatic.net/islands/_/6Roy0LCd05cK4nNCipgzheYcNVU.woff2")
+      format("woff2"),
+    url("//yastatic.net/islands/_/KtHQR1erf3spayoIM4M4ngg0e2E.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
 }

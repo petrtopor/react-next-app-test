@@ -1,3 +1,15 @@
 {
-  "extends": ["next", "next/core-web-vitals"]
+  "extends": [
+    "next",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+  },
+  "rules": {
+    // allow jsx syntax in js files (for next.js project)
+   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }], //should add ".ts" if typescript project
+    "react/jsx-props-no-spreading": "off"
+  }
 }
